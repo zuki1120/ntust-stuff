@@ -31,7 +31,7 @@ embeddings_dir = f'./embeddings/{args.model_type}/'
 product_names = []
 product_embeddings = []
 
-student_id = "M11352032"
+student_id = "id"
 results_path = "./results"
 
 # Find top100 query
@@ -61,8 +61,8 @@ for file, record_count in sorted_files[:100]:
     filename = os.path.basename(file)
     
     # 找到關鍵字
-    if 'M11352032_tfidf_' in filename:
-        extracted_name = filename.split('M11352032_tfidf_')[1].replace('.csv', '')
+    if 'id_tfidf_' in filename:
+        extracted_name = filename.split('id_tfidf_')[1].replace('.csv', '')
         top100_query.append(extracted_name)
         top100_query_count.append(record_count)
         print(f"{extracted_name}: {record_count} records")

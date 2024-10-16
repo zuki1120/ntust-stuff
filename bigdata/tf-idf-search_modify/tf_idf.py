@@ -34,7 +34,7 @@ sample_size = args.sample_size
 drop_duplicates = not args.all
 create = args.create
 
-student_id = "M11352032"
+student_id = "id"
 results_path = "./results"
 
 # %%

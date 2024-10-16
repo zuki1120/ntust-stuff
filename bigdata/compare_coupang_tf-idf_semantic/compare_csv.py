@@ -7,7 +7,7 @@ from xlsxwriter import Workbook
 coupang_folder = './Coupang_Scraping-main/results'
 tfidf_folder = './tf-idf-for-EE5327701/results'
 ABRSS_folder = './semantic_search-for-EE5327701/results'
-student_id = 'M11352032'
+student_id = 'id'
 
 csv_files = glob.glob(os.path.join(tfidf_folder, '*.csv'))
 
@@ -18,8 +18,8 @@ for file in csv_files:
     filename = os.path.basename(file)
     
     # 找關鍵字
-    if 'M11352032_tfidf_' in filename:
-        extracted_name = filename.split('M11352032_tfidf_')[1].replace('.csv', '')
+    if 'id_tfidf_' in filename:
+        extracted_name = filename.split('id_tfidf_')[1].replace('.csv', '')
         query.append(extracted_name)
 
 print(f'{query}')
