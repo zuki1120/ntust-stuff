@@ -2,7 +2,7 @@ torch==2.4.1+cu124
 torchvision==0.19.1+cu124
 numpy==1.26.3
 opencv_python==4.10.0.84
- matplotlib==3.9.2
+matplotlib==3.9.2
 Pandas==2.2.3
 Scikit-learn==1.5.2
 torchsummary==1.5.1
