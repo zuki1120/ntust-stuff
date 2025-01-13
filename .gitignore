@@ -175,3 +175,5 @@ cython_debug/
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
+ML/W7/pt/vgg_5.pt
+ML/W7/pt/vgg_10.pt
